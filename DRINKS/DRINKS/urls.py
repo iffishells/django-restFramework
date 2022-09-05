@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from DRINKS import views
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('drink-data/',views.get_drinks_list)
 ]
